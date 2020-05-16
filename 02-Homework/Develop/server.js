@@ -1,7 +1,7 @@
 const express = require("express")
 const app = express()
 const fs = require("fs")
-const PORT = process.env.port || 10000
+const PORT = process.env.PORT || 10000
 const path = require("path")
 
 app.use(express.json())
