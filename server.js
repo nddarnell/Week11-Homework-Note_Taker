@@ -51,7 +51,7 @@ app.delete("/api/notes/:id", (req, res)=>{
     console.log("successfully deleted note.")
 })
 // * takes you back to home page
-app.get("*", (req, res)=>{
+app.get("/", (req, res)=>{
     res.sendFile(__dirname + "/public/notes.html")
 })
 
