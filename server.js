@@ -49,7 +49,7 @@ app.delete("/api/notes/:id", (req, res)=>{
     //displays notes api after deleted note
     fs.writeFileSync(path.join(__dirname+ "/db/db.json"), JSON.stringify(noteAdd))
     console.log("successfully deleted note.")
-    location.reload();
+    res.json(noteAdd);
 })
 // * takes you back to home page
 app.get("/", (req, res)=>{
